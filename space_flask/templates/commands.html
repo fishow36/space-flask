@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+     <div class="command_list_card">
+        {% for command in commands%}
+        <div class="d-flex justify-content-center command_list">
+            {{ command }} <br> {{ explanations[loop.index - 1] }}
+           </div>
+        {% endfor %}
+       </div>
+      </div>
+     </div>
+{% endblock %}
